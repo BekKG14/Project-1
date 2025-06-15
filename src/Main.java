@@ -16,7 +16,6 @@ public class Main {
         System.out.println("Минимальная зарплата: " + checkLeastSalary());
         System.out.println("Средняя зарплата в компании: "+ averageSalary());
         System.out.println("Все сотрудники :"); printAllEmployees();
-        employees[1].toString();
     }
 
     private static void addEmployee(Employee employee) {
