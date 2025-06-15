@@ -16,6 +16,7 @@ public class Main {
         System.out.println("Минимальная зарплата: " + checkLeastSalary());
         System.out.println("Средняя зарплата в компании: "+ averageSalary());
         System.out.println("Все сотрудники :"); printAllEmployees();
+        printAnEmployee(2);
     }
 
     private static void addEmployee(Employee employee) {
@@ -75,6 +76,8 @@ public class Main {
         }
         }
     }
-
+    private static void printAnEmployee(int id) {
+        System.out.println(employees[id]);
+    }
         }
 
