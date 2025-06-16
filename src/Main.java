@@ -16,8 +16,8 @@ public class Main {
         System.out.println("Минимальная зарплата: " + checkLeastSalary());
         System.out.println("Средняя зарплата в компании: "+ averageSalary());
         System.out.println("Все сотрудники :"); printAllEmployees();
-        printAnEmployee(2);
-        printNameOfAnEmployee(1);
+        System.out.println("Имена всех сотрудников: "); printAllEmployeesFullNames();
+
     }
 
     private static void addEmployee(Employee employee) {
@@ -69,7 +69,7 @@ public class Main {
             return 0;
         }
     }
-    private static void printAllEmployees() {
+    private static void printAllEmployeesFullNames() {
         for (int i = 0; i < size; i++) {
             if (employees[i] != null) {
                 int b = i + 1;
@@ -78,11 +78,10 @@ public class Main {
         }
     }
 
-    private static void printNameOfAnEmployee(int id) {
-        System.out.println(employees[id].getFullName());
-    }
-    private static void printAnEmployee(int id) {
-        System.out.println(employees[id]);
+    private static void printAllEmployees() {
+        for (int i = 0; i < size; i++) {
+            System.out.println(employees[i]);
+        }
     }
         }
 
